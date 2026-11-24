@@ -1,11 +1,16 @@
-cat << 'EOF' > .gitignore
-.venv/
-venv/
+   # Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment & secrets
 .env
-*.env
-.DS_Store
+*.key
+
+# Large raw / temporary artifacts (keep sample/required data as needed)
 *.log
-EOF
+.DS_Store
